@@ -11,18 +11,21 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
+    // loads plant data
     case FETCHING_USERPLANTS_START:
         return ({
           ...state,
           isFetching: true,
           error: ''
         });
+    // when  plant data finshes laoding data is stored in userPlants
     case FETCHING_USERPLANTS_SUCCESS :
         return ({
           ...state,
           userPlants: action.payload,
           isFetching: false
         });
+    //  if data fetching fails the error message will be stored in error variable
     case FETCHING_USERPLANTS_FAIL :
         return ({
           ...state,
