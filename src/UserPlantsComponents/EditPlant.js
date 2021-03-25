@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `
 
 const Input = styled.input`
-  border: 1px solid #cbd5e0;
+  border: 2px solid #cbd5e0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
   margin-bottom: 2rem;
 `
