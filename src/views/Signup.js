@@ -98,7 +98,7 @@ const Signup = (props) => {
                     </Section>
                     <Section>
                         <SectionTitle>Password</SectionTitle>
-                        <Input type='text' name='password' value={signupValues.password} onChange={change} />
+                        <Input type='password' name='password' value={signupValues.password} onChange={change} />
                         <Error>{errors.password}</Error>
                     </Section>
                     <Section>
